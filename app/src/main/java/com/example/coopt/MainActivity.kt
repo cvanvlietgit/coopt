@@ -19,12 +19,7 @@ class MainActivity : ComponentActivity() {
             CooptTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
-                    Greeting("Git Test")
-
-
-
-
-
+                    Greeting("Testing just commit")
                 }
             }
         }
