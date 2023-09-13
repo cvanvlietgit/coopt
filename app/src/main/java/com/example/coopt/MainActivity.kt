@@ -3,6 +3,7 @@ package com.example.coopt
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
@@ -19,7 +20,7 @@ class MainActivity : ComponentActivity() {
             CooptTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
-                    Greeting("Testing just commit how to accept")
+                    Greeting("Christopher")
                 }
             }
         }
@@ -28,10 +29,16 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
+    Column {
+        Text(
             text = "Hello $name!",
             modifier = modifier
-    )
+        )
+        Text(
+            text = "Test Two for $name",
+            modifier = modifier
+        )
+    }
 }
 
 @Preview(showBackground = true)
